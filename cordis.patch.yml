@@ -1,0 +1,6 @@
+# Denies obviously destructive shell commands and writes into protected system
+# paths at the tools/pre-execute waterfall, before the tool body runs.
+- insert:
+    - id: danger-guard
+      name: '@orange-v-soda/dsh-danger-guard'
+      config: {}
